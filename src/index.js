@@ -21,14 +21,17 @@ client.on("ready", () => {
   console.log("Client is ready!");
 });
 
-// ⬇️ Aqui é feito a interação do robô com o usuário
+// ⬇️ Aqui é feito a interação do robô com o usuário 
 client.on("message", (msg) => {
-  // ⬇️ Abaixo temos uma condição que se o usuário, representado por "msg.body" mandar a mensagem "!ping".
-  if (msg.body == "!ping") {
-    // ⬇️ Fará com que o robô responda "pong"
-    msg.reply("pong");
+  const greeting = "Olá, bem vindo a lanchonete Guilherme do grau e Matheus do vapo"
+  // ⬇️ Abaixo temos uma condição que se o usuário, representado por "msg.body" mandar qualquer mensagem.
+  if (msg.body) {
+    // ⬇️ Fará com que o robô responda com a mensagem de saudação.
+    msg.reply(greeting);
   }
 });
+
+
 
 // ⬇️ Quando o arquivo é lido ele vai chamar todas as funções acima, mas esse trecho abaixo é crucial pois ele é resónsavel.
 // ⬇️ Por fazer o robô funcionar.
