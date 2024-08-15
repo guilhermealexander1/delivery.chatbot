@@ -6,5 +6,4 @@
 
 ### Essa primeira tarefa consiste em realizar o seguinte fluxo.
 
-- Se o usuário mandar `qualquer mensagem`, o robô deverá enviar uma mensagem de `saudação`, e logo após deverá mandar outra
-  mensagem com o `cardápio` listando todos os `lanches`, `sobremesas` e `bebidas`.
+- Se o usuário mandar `qualquer mensagem`, o robô deverá enviar uma mensagem de `saudação`.
